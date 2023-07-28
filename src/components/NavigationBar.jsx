@@ -1,7 +1,11 @@
+import NavLinks from "./NavLinks";
+import Logo from '../assets/logo.png';
+import NavButtons from './NavButtons';
+
 const NavigationBar = () => (
   <nav className="navigation-bar">
     <div className="navigation-header">
-      <img className="navigation-logo" />
+      <img className="navigation-logo" src={Logo} alt='koach logo'/>
     </div>
     <div className="navigation-links">
       <NavLinks />
@@ -14,4 +18,4 @@ const NavigationBar = () => (
     </div>
   </nav>
 )
-export default NavigationBar
+export default NavigationBar;
