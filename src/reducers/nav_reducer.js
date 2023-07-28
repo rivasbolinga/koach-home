@@ -8,3 +8,5 @@ const nav_reducer = (state, action) => {
     throw new Error(`No Matching "${action.type}" - action type`)
   }
 } 
+
+export default nav_reducer;
