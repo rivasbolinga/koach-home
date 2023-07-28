@@ -8,7 +8,6 @@
   display: none;
 }
 
-
 .navigation-bar {
   padding: 3%;
   display: flex;
@@ -43,13 +42,17 @@
 //--Navigation for mobile version END here
 
 
-//--Navigation for desktop STARTS here
+//--Navigation for tablet STARTS here
 
 @media (min-width: 768px) {
 .navigation-links,
 .navigation-buttons
  {
   display: block;
+}
+
+.navigation-logo {
+  width: 30px;
 }
 
 .hamburger-icon {
@@ -73,23 +76,30 @@
   justify-content: center;
   align-items: center;
   gap: 30px;
+  li {
+    color: $color-blue-1;
+    font-size: 15px;
+  }
 }
+
 .navigation-right-side {
  justify-self: flex-end;
- place-self: right;
+ gap: 10px;
+ justify-content: center;
+ align-items: center;
 }
 
 .navigation-buttons-container {
   display: flex;
   flex-direction: row;
-  gap: 10px;
+  gap: 15px;
 }
 
 .login-button {
   width: 100px;
   height: 30px;
   border: 1px solid $color-blue-1;
-  border-radius: 6px;
+  border-radius: 5px;
   color: $color-blue-1;
   transition: all 0.5s ease-in-out;
 }
@@ -109,5 +119,15 @@
 }
 .dark-mode-button {
   font-size: 15px;
+  padding-top: 6px;
+}
+}
+
+//--Navigation for tablet ENDS here
+//--Navigation for desktop STARTS here
+
+@media (min-width: 1000px) {
+.navigation-bar {
+  padding: 10px 40px;
 }
 }
