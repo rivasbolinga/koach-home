@@ -1,0 +1,34 @@
+@import './common.scss';
+// Navigation for mobile version STARTS here
+
+.navigation-links {
+  display: none;
+}
+
+.navigation-buttons {
+  display: none;
+}
+
+.navigation-bar {
+  padding: 3%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid blue;
+}
+
+.navigation-right-phone {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.navigation-logo {
+  width: 40px;
+}
+
+.dark-mode-button {
+  border: none;
+  background: none;
+}
