@@ -14,7 +14,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border: 1px solid blue;
 }
 
 .navigation-right-phone {
@@ -31,4 +30,11 @@
 .dark-mode-button {
   border: none;
   background: none;
+  color: $color-blue-1;
+  font-size: 25px;
+}
+
+.hamburger-icon {
+  font-size: 25px;
+  cursor: pointer;
 }

@@ -22,7 +22,7 @@ const NavigationBar = () => (
       <div className="navigation-buttons">
         <NavButtons />
       </div>
-      <RxHamburgerMenu />
+      <RxHamburgerMenu className="hamburger-icon"/>
     </div>
   </nav>
 )
