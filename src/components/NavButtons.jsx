@@ -1,3 +1,5 @@
+import '../styles/buttons.scss';
+
 const NavButtons = () => (
   <div className="navigation-buttons-container">
     <button className="login-button" type="button">
