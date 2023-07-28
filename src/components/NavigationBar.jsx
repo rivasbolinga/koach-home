@@ -9,11 +9,12 @@ const NavigationBar = () => (
   <nav className="navigation-bar">
     <div className="navigation-header">
       <img className="navigation-logo" src={Logo} alt="koach logo" />
+      <div className="navigation-links">
+        <NavLinks />
+      </div>
     </div>
-    <div className="navigation-links">
-      <NavLinks />
-    </div>
-    <div className='navigation-right-phone'>
+
+    <div className="navigation-right-side">
       <div className="navigation-dark-mode">
         <button className="dark-mode-button" type="button">
           <BsMoon />
@@ -22,7 +23,7 @@ const NavigationBar = () => (
       <div className="navigation-buttons">
         <NavButtons />
       </div>
-      <RxHamburgerMenu className="hamburger-icon"/>
+      <RxHamburgerMenu className="hamburger-icon" />
     </div>
   </nav>
 )

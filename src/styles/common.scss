@@ -18,7 +18,23 @@ body {
   -webkit-text-size-adjust: 100%;
 }
 
+li {
+  list-style: none;
+}
+
+*::first-letter {
+  text-transform:capitalize;
+  padding: 0;
+  margin: 0;
+}
+
 $color-white-1: rgb(252,252,252);
 $color-white-2: rgb(245,245,245);
 $color-white-3: rgb(252,252,252);
 $color-blue-1: rgb(44,71,139);
+
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
