@@ -1,0 +1,33 @@
+@import './common.scss';
+
+.navigation-buttons-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  width: 100%;
+}
+
+.login-button {
+  width: 100px;
+  height: 30px;
+  border: 1px solid $color-blue-1;
+  border-radius: 5px;
+  color: $color-blue-1;
+  transition: all 0.5s ease-in-out;
+}
+
+.login-button:hover {
+  background-color: $color-blue-1;
+  color: $color-white-1;
+}
+
+.login-button.blue {
+  background-color: $color-blue-1;
+  color: $color-white-1;
+}
+.login-button.blue:hover {
+  background-color: $color-white-1;
+  color: $color-blue-1;
+}
