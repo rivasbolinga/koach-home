@@ -1,5 +1,7 @@
+import NavigationBar from "../components/Navigation";
+
 const HomePage = () => (
-  <h1>Home Page</h1>
+  <NavigationBar />
 );
 
 export default HomePage; 
