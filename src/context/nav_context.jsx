@@ -1,6 +1,6 @@
 
-import React, { useContext } from 'react';
-import reducer from './reducers/nav_reducer';
+import React, { useContext, useReducer } from 'react';
+import reducer from '../reducers/nav_reducer';
 const initialState = {
   isSidebarOpen: false
 }
@@ -17,7 +17,7 @@ const closeSidebar = () => {
   dispatch({ type: SIDEBAR_CLOSE })
 }
 return (
-  <NavContext.Provider value={{...StaticRange, openSidebar, closeSidebar}}
+  <NavContext.Provider value={{...state, openSidebar, closeSidebar}}
 > {children} </NavContext.Provider>
 )
 }

@@ -4,8 +4,11 @@ import NavButtons from './NavButtons';
 import '../styles/navigation.scss';
 import { BsMoon } from 'react-icons/bs';
 import { RxHamburgerMenu } from 'react-icons/rx';
+import { useNavContext } from "../context/nav_context";
 
-const NavigationBar = () => (
+const NavigationBar = () => {
+  const { openSidebar } = useNavContext();
+  return (
   <nav className="navigation-bar">
     <div className="navigation-header">
       <img className="navigation-logo" src={Logo} alt="koach logo" />
@@ -23,8 +26,12 @@ const NavigationBar = () => (
       <div className="navigation-buttons">
         <NavButtons />
       </div>
-      <RxHamburgerMenu className="hamburger-icon" />
+      <RxHamburgerMenu 
+      className="hamburger-icon"
+      onClick={openSidebar}
+       />
     </div>
   </nav>
 )
+}
 export default NavigationBar;
