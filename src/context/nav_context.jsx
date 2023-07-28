@@ -10,11 +10,11 @@ const NavContext = React.createContext()
 export const NavProvider = ({children}) => {
   const [state, dispatch] = useReducer(reducer, initialState)
 const openSidebar = () => {
-  dispatch({ type: SIDEBAR_OPEN })
+  dispatch({ type: 'SIDEBAR_OPEN' })
 }
 
 const closeSidebar = () => {
-  dispatch({ type: SIDEBAR_CLOSE })
+  dispatch({ type: 'SIDEBAR_CLOSE' })
 }
 return (
   <NavContext.Provider value={{...state, openSidebar, closeSidebar}}

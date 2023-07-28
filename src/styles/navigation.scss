@@ -131,3 +131,12 @@
   padding: 10px 40px;
 }
 }
+
+
+//--Sidebar 
+.sidebar {
+  display: none;
+}
+.sidebar.show-sidebar {
+  display: block;
+}

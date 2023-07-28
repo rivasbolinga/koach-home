@@ -1,9 +1,15 @@
 
 import './App.css';
+import NavigationBar from './components/NavigationBar';
 import HomePage from './pages/HomePage';
+import Sidebar from './components/Sidebar';
 
 const App = () => (
-  <HomePage/>
+  <>
+    <NavigationBar />
+    <Sidebar />
+    <HomePage />
+  </>
 )
 
 export default App
