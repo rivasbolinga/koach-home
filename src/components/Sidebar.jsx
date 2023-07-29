@@ -1,5 +1,5 @@
 import { useNavContext } from "../context/nav_context"
-import logo from '../assets/logo.png';
+import logo from '../assets/icons/logo.png';
 import { GrClose } from 'react-icons/gr';
 import NavLinks from "./NavLinks";
 import NavButtons from "./NavButtons";

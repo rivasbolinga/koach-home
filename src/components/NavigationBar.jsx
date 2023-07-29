@@ -1,5 +1,5 @@
 import NavLinks from "./NavLinks";
-import Logo from '../assets/logo.png';
+import Logo from '../assets/icons/logo.png';
 import NavButtons from './NavButtons';
 import '../styles/navigation.scss';
 import { BsMoon } from 'react-icons/bs';

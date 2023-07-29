@@ -1,0 +1,67 @@
+@import './common.scss';
+
+// -- Phone version STARTS here
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 10px;
+  background-color: $color-white-2;
+  h1 {
+    font-size: 35px;
+    background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-image: $color-title-gradient;
+  }
+  img {
+    width: 95%;
+  }
+}
+// -- Phone version ENDS here
+
+// -- Tablet version STARTS here
+@media (min-width: 768px) {
+.hero-section {
+ 
+  padding: 50px;
+
+  h1 {
+    font-size: 40px;
+  
+  }
+  img {
+    width: 97%;
+  }
+}
+}
+
+// -- Tablet version ENDS here
+
+// -- Desktop version STARTS here
+
+@media (min-width: 1000px) {
+.hero-section {
+  padding: 50px;
+
+  h1 {
+    font-size: 45px;
+  
+  }
+  img {
+    width: 100%;
+    max-width: 1000px;
+  }
+}
+}
+
+@media (min-width: 1300px) {
+.hero-section {
+  padding: 55px;
+  h1 {
+    font-size: 55px;
+  }
+ }
+}
+// -- Desktop version ENDS here
