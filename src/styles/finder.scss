@@ -33,6 +33,11 @@
   box-shadow: 1px 2px 5px rgba(145, 143, 143, 0.54);
 }
 
+.filter-button.filtered {
+  background-color: $color-blue-2;
+  color: $color-white-2;
+}
+
 .form {
   display: flex;
   flex-direction: column;
@@ -48,6 +53,7 @@
   width: 85%;
   height: 30px;
   background: none;
+  padding-left: 10px;
 }
 
 .search-mentor-input::placeholder {
