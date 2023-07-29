@@ -26,11 +26,11 @@
 
 .filter-button {
   background-color: $color-white-2;
-  padding: 10px 15px;
+  padding: 15px;
   color: $color-blue-3;
   font-weight: 600;
   border-radius: 5px;
-  box-shadow: 20px 10px 20px rgba(183, 183, 183, 0.308);
+  box-shadow: 1px 2px 5px rgba(145, 143, 143, 0.54);
 }
 
 .form {
@@ -41,6 +41,7 @@
   width: 100%;
   gap: 20px;
 }
+
 .search-mentor-input {
   border: 0.5px solid $color-blue-3;
   border-radius: 3px;
@@ -64,8 +65,9 @@
   transition: all 0.5s ease-in-out;
   font-weight: 600;
 }
-// -- Phone version ENDS here
 
+// -- Phone version ENDS here
+//------------------------------------------------------------------
 // -- TABLET version STARTS here
 @media (min-width: 768px) {
 .finder-section {
@@ -83,16 +85,57 @@
   gap: 15px;
 }
 
-.filter-button {
-  background-color: $color-white-2;
-  padding: 15px;
-  color: $color-blue-3;
-  font-weight: 600;
-  border-radius: 5px;
-  box-shadow: 1px 1px 20px rgba(183, 183, 183, 0.308);
-}
-
 .search-mentor-input {
   width: 90%;
 }
 }
+
+// -- TABLET version ENDS here
+//------------------------------------------------------------------
+// -- DESKTOP version STARTS here
+@media (min-width: 1000px) {
+
+.search-mentor-input {
+  width: 80%;
+  height: 40px;
+  border-radius: 6px;
+}
+.find-mentor-btn {
+  height: 40px;
+}
+}
+
+@media (min-width: 1300px) {
+.finder-section {
+  margin: 0 60px;
+  padding: 30px;
+  h2 {
+    font-size: 48px;
+  }
+}
+
+.filters-container {
+  gap: 30px;
+  max-width: 950px;
+}
+
+.filter-button {
+  padding: 25px 30px;
+  font-size: 22px;
+}
+
+.search-mentor-input {
+  height: 50px;
+  border-radius: 6px;
+}
+.search-mentor-input::placeholder {
+ font-size: 18px;
+}
+
+.find-mentor-btn {
+  height: 60px;
+  font-size: 20px;
+  width: 200px;
+}
+}
+// -- DESKTOP version ENDS here
