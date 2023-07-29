@@ -1,4 +1,5 @@
 import filtersContent from '../data';
+import '../styles/finder.scss';
 
 const Finder = () => {
   return (
@@ -9,16 +10,16 @@ const Finder = () => {
         return <button className='filter-button' type='filter'>{filter}</button>
       })}
     </div>
-    <div className='form'>
-      <form>
+      <form className='form'>
         <input 
+        className='search-mentor-input'
         type='text'
-        placeholder='search mentors'
+        placeholder='Search mentors'
         required
         />
-        <button>find your mentor</button>
-      </form>
-    </div>
+        <button className='find-mentor-btn'>find your mentor</button>
+        </form>
+
   </section>
   );
 };
