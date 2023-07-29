@@ -1,0 +1,152 @@
+@import './common.scss';
+
+//-- Footer for mobile version STARTS here
+footer {
+  background-color: $color-white-3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px 10px;
+  text-align: left;
+  gap: 30px;
+}
+
+.footer-right-container {
+display: grid;
+grid-template-columns: 1fr 1fr;
+grid-template-rows: 1fr 1fr;
+
+}
+
+.footer-company-name {
+  font-size: 25px;
+  color: $color-blue-2;
+  text-align: left;
+  font-weight: 700;
+}
+
+.footer-description {
+ font-size: 15px;
+ max-width: 300px;
+ font-weight: 300;
+}
+
+.social-logos {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 15px;
+  font-size: 25px;
+}
+
+.twitter-logo {
+color: $color-blue-tw;
+}
+
+.linkedin-logo {
+  color: $color-blue-in;
+}
+
+.footer-links-container {
+color: $colo-grey-1;
+margin-top: 20px;
+h4 {
+  font-size: 14px;
+  margin: 10px 0;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+ 
+}
+li {
+  font-size: 14px;
+}
+}
+
+//-- Footer for mobile version ENDS here
+
+//-- Footer for tablet version STARTS here
+
+@media (min-width: 768px) {
+.footer-right-container {
+display: flex;
+gap: 50px;
+}
+.footer-links-container {
+h4 {
+  font-size: 13px;
+  font-weight: 500;
+}
+
+li {
+  font-size: 12px;
+  font-weight: 400;
+}
+}
+}
+//-- Footer for tablet version ENDS here
+
+//-- Footer for desktop version STARTS here
+@media (min-width: 1000px) {
+  footer {
+  padding: 20px 50px 30px 50px;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.footer-company-name {
+  margin: 0;
+}
+
+.footer-description {
+  font-size: 14px;
+}
+
+.footer-links-container {
+h4 {
+  font-size: 12px;
+}
+
+li {
+  font-size: 11px;
+}
+}
+@media (min-width: 1300px) {
+  footer {
+  padding: 30px 60px 30px 60px;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.footer-company-name {
+  margin: 0;
+}
+
+.footer-description {
+  font-size: 16px;
+  max-width: 350px;
+  font-weight: 400;
+}
+
+.footer-right-container {
+display: flex;
+gap: 60px;
+}
+
+.footer-links-container {
+h4 {
+  font-size: 13px;
+}
+
+li {
+  font-size: 11px;
+}
+}
+}
+}
+
+//-- Footer for desktop version ENDS here
