@@ -1,7 +1,7 @@
-import NavigationBar from "../components/NavigationBar";
+import Hero from "../components/Hero";
 
 const HomePage = () => (
-  <h1>home</h1>
+  <Hero />
 );
 
 export default HomePage; 
