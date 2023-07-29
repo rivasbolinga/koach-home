@@ -20,3 +20,48 @@
   }
 }
 // -- Phone version ENDS here
+
+// -- Tablet version STARTS here
+@media (min-width: 768px) {
+.hero-section {
+ 
+  padding: 50px;
+
+  h1 {
+    font-size: 40px;
+  
+  }
+  img {
+    width: 97%;
+  }
+}
+}
+
+// -- Tablet version END here
+
+// -- Desktop version STARTS here
+
+@media (min-width: 1000px) {
+.hero-section {
+  padding: 50px;
+
+  h1 {
+    font-size: 45px;
+  
+  }
+  img {
+    width: 100%;
+    max-width: 1000px;
+  }
+}
+}
+
+@media (min-width: 1300px) {
+.hero-section {
+  padding: 55px;
+  h1 {
+    font-size: 55px;
+  }
+}
+}
+// -- Desktop version END here
