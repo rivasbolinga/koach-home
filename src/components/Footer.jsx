@@ -1,16 +1,22 @@
+import { AiOutlineTwitter, AiFillLinkedin } from 'react-icons/ai'
+import '../styles/footer.scss';
+
 const Footer = () => (
   <footer className="footer">
     <div className="footer-left-container">
-      <h1>Koach</h1>
-      <p>
+      <h3 className='footer-company-name'>Koach</h3>
+      <p className='footer-description'>
         We match the right initiatives with the right expertise, fostering
         flexible connections and empowering success
       </p>
-      <div className="social-logos">logos</div>
+      <div className="social-logos">
+        <AiOutlineTwitter className='twitter-logo'/>
+        <AiFillLinkedin className='linkedin-logo' />
+      </div>
     </div>
     <div className="footer-right-container">
       <div className="footer-links-container">
-        <h3>PLATFORM</h3>
+        <h4>PLATFORM</h4>
         <ul>
           <li>Browse mentors</li>
           <li>Book a Session</li>
@@ -18,14 +24,14 @@ const Footer = () => (
         </ul>
       </div>
       <div className="footer-links-container">
-        <h3>RESOURCES</h3>
+        <h4>RESOURCES</h4>
         <ul>
           <li>Newsletter</li>
-          <li>Blog</li>
+          <li>Blogs</li>
         </ul>
       </div>
       <div className="footer-links-container">
-        <h3>COMPANY</h3>
+        <h4>COMPANY</h4>
         <ul>
           <li>About</li>
           <li>Partner Program</li>
@@ -33,7 +39,7 @@ const Footer = () => (
         </ul>
       </div>
       <div className="footer-links-container">
-        <h3>SUPPORT</h3>
+        <h4>SUPPORT</h4>
         <ul>
           <li>FAQ</li>
           <li>Contact</li>
