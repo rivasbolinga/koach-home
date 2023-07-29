@@ -1,7 +1,11 @@
+import Finder from "../components/Finder";
 import Hero from "../components/Hero";
 
 const HomePage = () => (
-  <Hero />
-);
+  <>
+    <Hero />
+    <Finder />
+  </>
+)
 
 export default HomePage; 

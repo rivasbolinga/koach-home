@@ -1,0 +1,147 @@
+@import './common.scss';
+
+// -- Phone version STARTS here
+
+.finder-section {
+  padding: 40px 10px;
+  background-color: $color-blue-4;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  h2 {
+    color: $color-blue-2;
+    padding: 20px;
+    width: 80%;
+  }
+}
+
+.filters-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.filter-button {
+  background-color: $color-white-2;
+  padding: 15px;
+  color: $color-blue-3;
+  font-weight: 600;
+  border-radius: 5px;
+  box-shadow: 1px 2px 5px rgba(145, 143, 143, 0.54);
+}
+
+.filter-button.filtered {
+  background-color: $color-blue-2;
+  color: $color-white-2;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 20px;
+}
+
+.search-mentor-input {
+  border: 0.5px solid $color-blue-3;
+  border-radius: 3px;
+  width: 85%;
+  height: 30px;
+  background: none;
+  padding-left: 10px;
+}
+
+.search-mentor-input::placeholder {
+  color: $color-blue-3;
+  padding: 10px 5px;
+  font-weight: 600;
+}
+
+.find-mentor-btn {
+  width: 135px;
+  height: 35px;
+  color: $color-white-1;
+  border-radius: 4px;
+  background-color: $color-blue-1;
+  transition: all 0.5s ease-in-out;
+  font-weight: 600;
+}
+
+// -- Phone version ENDS here
+//------------------------------------------------------------------
+// -- TABLET version STARTS here
+@media (min-width: 768px) {
+.finder-section {
+  margin: 0 40px;
+  padding: 20px;
+  h2 {
+    font-size: 30px;
+    padding:0;
+    margin: 0;
+  }
+}
+
+.filters-container {
+ max-width: 600px;
+  gap: 15px;
+}
+
+.search-mentor-input {
+  width: 90%;
+}
+}
+
+// -- TABLET version ENDS here
+//------------------------------------------------------------------
+// -- DESKTOP version STARTS here
+@media (min-width: 1000px) {
+
+.search-mentor-input {
+  width: 80%;
+  height: 40px;
+  border-radius: 6px;
+}
+.find-mentor-btn {
+  height: 40px;
+}
+}
+
+@media (min-width: 1300px) {
+.finder-section {
+  margin: 0 60px;
+  padding: 30px;
+  h2 {
+    font-size: 48px;
+  }
+}
+
+.filters-container {
+  gap: 30px;
+  max-width: 950px;
+}
+
+.filter-button {
+  padding: 25px 30px;
+  font-size: 22px;
+}
+
+.search-mentor-input {
+  height: 50px;
+  border-radius: 6px;
+}
+.search-mentor-input::placeholder {
+ font-size: 18px;
+}
+
+.find-mentor-btn {
+  height: 60px;
+  font-size: 20px;
+  width: 200px;
+}
+}
+// -- DESKTOP version ENDS here
