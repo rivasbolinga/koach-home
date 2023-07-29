@@ -1,5 +1,6 @@
 @import './common.scss';
 
+//-- Footer for mobile version STARTS here
 footer {
   background-color: $color-white-3;
   display: flex;
@@ -8,7 +9,6 @@ footer {
   padding: 20px 10px;
   text-align: left;
   gap: 30px;
- 
 }
 
 .footer-right-container {
@@ -26,6 +26,7 @@ grid-template-rows: 1fr 1fr;
 
 .footer-description {
  font-size: 15px;
+ max-width: 300px;
 }
 
 .social-logos {
@@ -61,5 +62,37 @@ ul {
 }
 li {
   font-size: 14px;
+}
+}
+
+//-- Footer for mobile version ENDS here
+
+//-- Footer for tablet version STARTS here
+
+@media (min-width: 768px) {
+.footer-right-container {
+display: flex;
+gap: 50px;
+}
+.footer-links-container {
+h4 {
+  font-size: 13px;
+}
+
+li {
+  font-size: 12px;
+}
+}
+}
+//-- Footer for tablet version ENDS here
+
+@media (min-width: 1000px) {
+  footer {
+  
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px 10px;
+  text-align: left;
+  gap: 20px;
 }
 }
