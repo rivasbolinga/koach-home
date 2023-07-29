@@ -4,18 +4,19 @@ import { useFilterContext } from '../context/filter_context';
 
 const Finder = () => {
   const { toggleFilter, filters } = useFilterContext();
+  const {title, filters:filterItems } = filtersContent;
   return (
   <section className="finder-section">
-    <h2>{filtersContent.title}</h2>
+    <h2>{title}</h2>
     <div className="filters-container">
-      {filtersContent.filters.map((filter, i) => {
+      {filterItems.map((filter, i) => {
         return (
           <button
             className={`filter-button ${
               filters[i].isFiltered ? 'filtered' : ''
             }`}
             type="button"
-            key={i}
+            key={`filter-${i}`}
             onClick={() => toggleFilter(i)}
           >
             {filter}
