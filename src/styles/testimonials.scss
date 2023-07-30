@@ -66,3 +66,31 @@ span {
   }
 
 }
+
+@media (min-width: 1000px) {
+  .testimonials-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+  
+  h3 {
+   font-size: 25px;
+   padding: 0;
+   margin: 5px 0;
+  }
+  p {
+    font-size: 15px;
+    width: 600px;
+  }
+}
+
+.testimonials-container {
+
+  cursor: grab;
+  width: 80%;
+ 
+}
+
+}
