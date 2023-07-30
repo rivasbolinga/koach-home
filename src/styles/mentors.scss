@@ -50,10 +50,10 @@
 
 .mentor-container {
   background-color: $color-white-1;
-  height: 390px;
   width: 300px;
   border-radius: 10px;
    box-shadow: 1px 2px 5px rgba(145, 143, 143, 0.54);
+   padding-bottom: 20px;
 }
 
 .mentor-img {
@@ -109,7 +109,7 @@
 // -- Phone version ENDS here
 //------------------------------------------------------------------
 // -- TABLET version STARTS here
-@media (min-width: 768px) {
+@media (min-width: 668px) {
 .mentors-section {
  h1 {
    font-size: 30px;
@@ -132,7 +132,7 @@
 // -- TABLET version ENDS here
 //------------------------------------------------------------------
 // -- DESKTOP version STARTS here
-@media (min-width: 100px) {
+@media (min-width: 1000px) {
 .mentors-section {
  h1 {
    font-size: 30px;
@@ -145,7 +145,7 @@
   max-width: 800px;
 }
 .mentor-container {
-  width: 240px;
+  width: 340px;
 }
 
 .tag-container {

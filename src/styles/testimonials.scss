@@ -1,0 +1,35 @@
+@import './common.scss';
+
+.testimonials-container {
+  display: flex;
+}
+
+
+.testimonials-container {
+  display: flex;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+  padding: 10px; 
+  cursor: grab;
+  margin: 50px;
+  width: 80%;
+}
+
+.testimonial-container { 
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+}
+
+.testimonial-img {
+  width: 100%;
+  max-width: 100px; // Adjust the image size as needed
+  border-radius: 50%;
+}
+
+// Optional: Style testimonial text if needed
+.testimonial-container p {
+  margin-top: 10px;
+  font-size: 16px;
+}

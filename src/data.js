@@ -6,6 +6,9 @@ import mentor1Image from './assets/images/mentor-1.png';
 import mentor2Image from './assets/images/mentor-2.png';
 import mentor3Image from './assets/images/mentor-3.png';
 import mentor4Image from './assets/images/mentor-4.png';
+import testimonial1Image from './assets/images/testimonial-1.png';
+import testimonial2Image from './assets/images/testimonial-2.png';
+import testimonial3Image from './assets/images/testimonial-3.png';
 
  const filtersContent = {
   title: 'Find the right Koach for you',
@@ -77,6 +80,49 @@ export const mentorsData = {
       img: mentor4Image,
       name: 'Alex Bricks 🇫🇷',
       job: 'Backend developer at Samsung',
+    },
+  ],
+}
+
+export const reviewsData = {
+  title: 'Be better everyday',
+  description:
+    'we all need support and guidance. Koach will help you build your confidence effectively and sustainably and help you unlock your full potential so you ca reach any goal.',
+  reviews: [
+    {
+      name: 'Kate Miles',
+      job: 'Software Development',
+      review:
+        "As a retired professional, I joined Koach to share my knowledge and give back to the next generation. It's been incredibly rewarding to see mentees ProgressEvent.",
+      img: testimonial1Image,
+    },
+    {
+      name: 'Alex Bricks',
+      job: 'Software Development',
+      review:
+        'Koach has been a game-changer for my career. The mentor I found on the platform provided invaluable guidance and helped me navigate the challenges in my industry.',
+      img: testimonial2Image,
+    },
+    {
+      name: 'Emily Rodriguez',
+      job: 'Software Development',
+      review:
+        'Koach has been a game-changer for my career. The mentor I found on the platform provided invaluable guidance and helped me navigate the challenges in my industry.',
+      img: testimonial3Image,
+    },
+    {
+      name: 'Emily Rodriguez',
+      job: 'Software Development',
+      review:
+        'Koach has been a game-changer for my career. The mentor I found on the platform provided invaluable guidance and helped me navigate the challenges in my industry.',
+      img: testimonial3Image,
+    },
+    {
+      name: 'Emily Rodriguez',
+      job: 'Software Development',
+      review:
+        'Koach has been a game-changer for my career. The mentor I found on the platform provided invaluable guidance and helped me navigate the challenges in my industry.',
+      img: testimonial3Image,
     },
   ],
 }
