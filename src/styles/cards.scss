@@ -1,5 +1,7 @@
 @import './common.scss';
 
+// -- Phone version STARTS here
+
 .cards-section {
   background-color: $color-white-2;
   padding: 50px 10px;
@@ -15,6 +17,7 @@
 }
 
 .card-container {
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -26,14 +29,56 @@
     padding: 0;
     width: 90%;
   }
+  li {
+    font-size: 14px;
+  }
 }
 
 .card-container:last-child {
   ul {
-    padding: 20px;
+    padding-left: 10px;
+    width: 90%;
   }
   li {
     list-style: inside;
     text-align: left;
   }
+}
+
+// -- Phone version ENDS here
+//------------------------------------------------------------------
+// -- TABLET version STARTS here
+
+@media (min-width:768px) {
+  .card-image {
+  width: 80%;
+}
+  .card-container {
+  h2 {
+    font-size: 35px;
+  }
+  ul {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  li {
+    font-size: 16px;
+    width: 80%;
+  }
+}
+.card-container:last-child {
+  ul {
+    padding-left: 10px;
+    width: 100%;
+    align-items: flex-start;
+  }
+  li {
+    list-style: inside;
+    text-align: left;
+    width: 100%;
+  }
+}
 }
