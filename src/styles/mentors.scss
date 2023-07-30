@@ -109,3 +109,21 @@
 // -- Phone version ENDS here
 //------------------------------------------------------------------
 // -- TABLET version STARTS here
+
+.mentors-section {
+ h1 {
+   font-size: 30px;
+   width: 80%;
+ }
+}
+
+.tags-container {
+ width: 100%;
+ flex-direction: row;
+ flex-wrap: wrap;
+}
+
+.mentors-container {
+   flex-direction: row;
+ flex-wrap: wrap;
+}
