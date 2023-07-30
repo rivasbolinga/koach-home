@@ -1,0 +1,146 @@
+@import './common.scss';
+
+// -- Phone version STARTS here
+
+.cards-section {
+  background-color: $color-white-2;
+  padding: 50px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.card-image {
+  width: 80%;
+}
+
+.card-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  h2 {
+    color: $color-blue-2;
+  }
+  ul {
+    padding: 0;
+    width: 90%;
+  }
+  li {
+    font-size: 14px;
+  }
+}
+
+.card-container:last-child {
+  ul {
+    padding-left: 10px;
+    width: 90%;
+  }
+  li {
+    list-style: inside;
+    text-align: left;
+  }
+}
+
+// -- Phone version ENDS here
+//------------------------------------------------------------------
+// -- TABLET version STARTS here
+
+@media (min-width:768px) {
+  .card-image {
+  width: 80%;
+}
+  .card-container {
+  h2 {
+    font-size: 35px;
+  }
+  ul {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  li {
+    font-size: 16px;
+    width: 80%;
+  }
+}
+.card-container:last-child {
+  ul {
+    padding-left: 10px;
+    width: 100%;
+    align-items: flex-start;
+  }
+  li {
+    list-style: inside;
+    text-align: left;
+    width: 100%;
+  }
+}
+}
+// -- TABLET version ENDS here
+//------------------------------------------------------------------
+// -- DESKTOP version STARTS here
+
+@media (min-width: 1000px) {
+  .cards-section {
+    gap: 50px;
+    padding: 70px 30px;
+  }
+   .card-image {
+  width: 37%;
+}
+
+.card-container {
+  flex-direction: row;
+  gap: 40px;
+  h2 {
+    font-size: 30px;
+    text-align: left;
+    margin: 0;
+  }
+  ul {
+    padding: 0;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  li {
+    font-size: 14px;
+    text-align: left;
+  }
+}
+.card-details {
+    width: 40%;
+  }
+
+.card-container:nth-child(odd) {
+  flex-direction: row-reverse;
+}
+
+}
+@media (min-width: 1300px) {
+  .cards-section {
+    gap: 50px;
+    padding: 100 30px;
+  }
+   .card-image {
+  width: 37%;
+}
+
+.card-container {
+  h2 {
+    font-size: 40px;
+  }
+  li {
+    font-size: 16px;
+
+  }
+}
+
+
+}
