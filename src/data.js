@@ -36,6 +36,7 @@ export const cardsData = [
     description: 'is a skilled mentor listens to you without bias',
     description2: 'provides fresh insights and ideas',
     description3: 'collaborates with you on your career journey',
+    description4: 'offers unwavering support',
     img: card4Image,
   },
 ]
