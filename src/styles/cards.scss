@@ -82,3 +82,65 @@
   }
 }
 }
+// -- TABLET version ENDS here
+//------------------------------------------------------------------
+// -- DESKTOP version STARTS here
+
+@media (min-width: 1000px) {
+  .cards-section {
+    gap: 50px;
+    padding: 70px 30px;
+  }
+   .card-image {
+  width: 37%;
+}
+
+.card-container {
+  flex-direction: row;
+  gap: 40px;
+  h2 {
+    font-size: 30px;
+    text-align: left;
+    margin: 0;
+  }
+  ul {
+    padding: 0;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  li {
+    font-size: 14px;
+    text-align: left;
+  }
+}
+.card-details {
+    width: 40%;
+  }
+
+.card-container:nth-child(odd) {
+  flex-direction: row-reverse;
+}
+
+}
+@media (min-width: 1300px) {
+  .cards-section {
+    gap: 50px;
+    padding: 100 30px;
+  }
+   .card-image {
+  width: 37%;
+}
+
+.card-container {
+  h2 {
+    font-size: 40px;
+  }
+  li {
+    font-size: 16px;
+
+  }
+}
+
+
+}
