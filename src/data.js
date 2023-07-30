@@ -55,21 +55,25 @@ export const mentorsData = {
   ],
   mentors: [
     {
+      id: 1,
       img: mentor1Image,
       name: 'Alex Bricks 🇫🇷',
       job: 'Backend developer at Samsung',
     },
     {
+      id: 2,
       img: mentor2Image,
       name: 'Dany Blue 🇫🇷',
       job: 'Backend developer at Futurice',
     },
     {
+      id: 3,
       img: mentor3Image,
       name: 'Kate Millet 🇫🇷',
       job: 'Backend developer at Kone',
     },
     {
+      id: 4,
       img: mentor4Image,
       name: 'Alex Bricks 🇫🇷',
       job: 'Backend developer at Samsung',

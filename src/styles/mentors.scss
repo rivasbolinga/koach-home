@@ -1,0 +1,111 @@
+@import './common.scss';
+
+// -- Phone version STARTS here
+
+.mentors-section {
+  padding: 50px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ h1 {
+     background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-image: $color-title-gradient;
+ }
+}
+
+.tags-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.tag-container {
+  display: flex;
+  background-color: $color-white-1;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  padding: 0 10px;
+  border: 0.5px solid $color-blue-2;
+  color: $color-blue-2;
+  font-weight: 600;
+  font-size: 13px;
+  max-height: 45px;
+}
+
+.mentors-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 50px 20px;
+  gap: 30px;
+}
+
+.mentor-container {
+  background-color: $color-white-1;
+  height: 390px;
+  width: 300px;
+  border-radius: 10px;
+   box-shadow: 1px 2px 5px rgba(145, 143, 143, 0.54);
+}
+
+.mentor-img {
+  width: 100%
+}
+
+.mentor-details {
+   display: flex;
+  justify-content:flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 0 10px;
+  h4 {
+    margin: 5px 0 0 0;
+    font-weight: 700;
+    font-size: 20px;
+  }
+}
+.experience-stars-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.job-container {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.stars-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  font-size: 14px;
+}
+
+.experience-container {
+  p {
+    margin: 0;
+  }
+}
+
+.star {
+  color: $color-yellow
+}
+.years {
+  font-weight: 600;
+  text-align: left;
+}
+// -- Phone version ENDS here
+//------------------------------------------------------------------
+// -- TABLET version STARTS here

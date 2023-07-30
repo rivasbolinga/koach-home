@@ -1,4 +1,8 @@
 import { mentorsData } from "../data";
+import '../styles/mentors.scss';
+import { AiFillStar} from 'react-icons/ai';
+import { PiSuitcaseSimpleBold } from 'react-icons/pi'
+
 
 const Mentors = () => {
 const {title, tags, mentors} = mentorsData;
@@ -17,24 +21,30 @@ return (
     </div>
     <div className="mentors-container">
       {mentors.map((mentor)=>{
-        const { img, name, job} = mentor;
-        <div className="mentor-container">
-          <img className="mentor-img" alt='mentor' src={img}/>
-          <div className="mentor-details">
-            <h4>{name}</h4>
-            <p> {job}</p>
-            <div className="experience-stars-container">
-              <div className="experience-container">
-                <p>Experience</p>
-                <p className="years">2 yearse</p>
+        const { id, img, name, job} = mentor;
+        return (
+          <div className="mentor-container" key={`mentor-${id}`}>
+            <img className="mentor-img" alt="mentor" src={img} />
+            <div className="mentor-details">
+              <h4>{name}</h4>
+              <div className="job-container">
+                <PiSuitcaseSimpleBold />
+                <p>{job}</p>{' '}
               </div>
-              <div className="stars-container">
-                <p>4.8</p>
-                <p>*</p>
+              <div className="experience-stars-container">
+                <div className="experience-container">
+                  <p>Experience</p>
+                  <p className="years">2 years</p>
+                </div>
+                <div className="stars-container">
+                  4.8
+                  <AiFillStar className="star" />
+                </div>
               </div>
             </div>
           </div>
-        </div>
+        )
+
       })}
     </div>
   </section>
