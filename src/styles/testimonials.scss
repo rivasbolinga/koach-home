@@ -1,8 +1,16 @@
 @import './common.scss';
 
-.testimonials-container {
-  display: flex;
+.testimonials-section {
+  padding: 0 10px;
+  h3 {
+     background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-image: $color-title-gradient;
+  padding: 20px 10px;
+  }
 }
+
 
 
 .testimonials-container {
@@ -11,25 +19,50 @@
   scroll-behavior: smooth;
   padding: 10px; 
   cursor: grab;
-  margin: 50px;
-  width: 80%;
+  width: 95%;
+  display: flex;
+  gap: 30px;
 }
 
 .testimonial-container { 
   flex: 0 0 auto;
   display: flex;
   flex-direction: column;
-  width: 400px;
+  margin: 50px 0;
+   border-right: 0.6px solid;
+  border-radius: 20px;
 }
 
 .testimonial-img {
-  width: 100%;
-  max-width: 100px; // Adjust the image size as needed
+  width: 40px;
+  height: 40px; 
   border-radius: 50%;
 }
 
-// Optional: Style testimonial text if needed
+
 .testimonial-container p {
-  margin-top: 10px;
-  font-size: 16px;
+  font-size: 12px;
+  max-width: 250px;
+}
+.testimony-details {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+}
+span {
+  font-weight: 600;
+}
+
+.testimonee-details {
+  text-align: left;
+    h5 {
+      border-bottom: 1px solid black;
+      width: 80px;
+      margin: 0px;
+  }
+  p {
+    margin: 0;
+  }
+
 }
