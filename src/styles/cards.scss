@@ -1,0 +1,39 @@
+@import './common.scss';
+
+.cards-section {
+  background-color: $color-white-2;
+  padding: 50px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.card-image {
+  width: 80%;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  h2 {
+    color: $color-blue-2;
+  }
+  ul {
+    padding: 0;
+    width: 90%;
+  }
+}
+
+.card-container:last-child {
+  ul {
+    padding: 20px;
+  }
+  li {
+    list-style: inside;
+    text-align: left;
+  }
+}

@@ -1,4 +1,5 @@
 import { cardsData } from "../data";
+import '../styles/cards.scss';
 
 const Cards = () => {
 
@@ -14,8 +15,8 @@ return (
         <ul>
           <li>{description}</li>
           {description2 ? <li>{description2}</li> : ''}
-          {description3 ? <li>{description2}</li> : ''}
-          {description4 ? <li>{description2}</li> : ''}
+          {description3 ? <li>{description3}</li> : ''}
+          {description4 ? <li>{description4}</li> : ''}
         </ul>
       </div>
     </div>
