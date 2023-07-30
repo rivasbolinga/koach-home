@@ -2,6 +2,10 @@ import card1Image from './assets/images/card-1.png';
 import card2Image from './assets/images/card-2.png';
 import card3Image from './assets/images/card-3.png';
 import card4Image from './assets/images/card-4.png';
+import mentor1Image from './assets/images/mentor-1.png';
+import mentor2Image from './assets/images/mentor-2.png';
+import mentor3Image from './assets/images/mentor-3.png';
+import mentor4Image from './assets/images/mentor-4.png';
 
  const filtersContent = {
   title: 'Find the right Koach for you',
@@ -39,6 +43,42 @@ export const cardsData = [
     description4: 'offers unwavering support',
     img: card4Image,
   },
-]
+];
+
+export const mentorsData = {
+  title: 'Our blend of coaching and mentorship helps people to',
+  tags: [
+    'create meaningful goals',
+    'understand how to achieve them',
+    'get unstuck along the way',
+    'improve how people, teams & companies operate',
+  ],
+  mentors: [
+    {
+      id: 1,
+      img: mentor1Image,
+      name: 'Alex Bricks 🇫🇷',
+      job: 'Backend developer at Samsung',
+    },
+    {
+      id: 2,
+      img: mentor2Image,
+      name: 'Dany Blue 🇫🇷',
+      job: 'Backend developer at Futurice',
+    },
+    {
+      id: 3,
+      img: mentor3Image,
+      name: 'Kate Millet 🇫🇷',
+      job: 'Backend developer at Kone',
+    },
+    {
+      id: 4,
+      img: mentor4Image,
+      name: 'Alex Bricks 🇫🇷',
+      job: 'Backend developer at Samsung',
+    },
+  ],
+}
 
 export default filtersContent;
