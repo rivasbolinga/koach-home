@@ -1,29 +1,29 @@
-import { useState, useRef } from 'react'
-import { reviewsData } from '../data'
-import '../styles/testimonials.scss'
+import { useState, useRef } from 'react';
+import { reviewsData } from '../data';
+import '../styles/testimonials.scss';
 
 const Testimonials = () => {
-  const { title, description, reviews } = reviewsData
-  const testimonialsContainerRef = useRef(null)
-  const [isDragging, setIsDragging] = useState(false)
-  const [dragStartX, setDragStartX] = useState(0)
-  const [scrollLeft, setScrollLeft] = useState(0)
+  const { title, description, reviews } = reviewsData;
+  const testimonialsContainerRef = useRef(null);
+  const [isDragging, setIsDragging] = useState(false);
+  const [dragStartX, setDragStartX] = useState(0);
+  const [scrollLeft, setScrollLeft] = useState(0);
 
   const handleMouseDown = (e) => {
     setIsDragging(true)
     setDragStartX(e.clientX)
     setScrollLeft(testimonialsContainerRef.current.scrollLeft)
-  }
+  };
 
   const handleMouseMove = (e) => {
     if (!isDragging) return
     const dragOffset = e.clientX - dragStartX
     testimonialsContainerRef.current.scrollLeft = scrollLeft - dragOffset
-  }
+  };
 
   const handleMouseUp = () => {
     setIsDragging(false)
-  }
+  };
 
   return (
     <section className="testimonials-section">
@@ -55,7 +55,7 @@ const Testimonials = () => {
         })}
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Testimonials
+export default Testimonials;

@@ -1,4 +1,4 @@
-import { AiOutlineTwitter, AiFillLinkedin } from 'react-icons/ai'
+import { AiOutlineTwitter, AiFillLinkedin } from 'react-icons/ai';
 import '../styles/footer.scss';
 
 const Footer = () => (
@@ -47,6 +47,6 @@ const Footer = () => (
       </div>
     </div>
   </footer>
-)
+);
 
 export default Footer;

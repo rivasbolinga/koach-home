@@ -16,7 +16,6 @@ const NavigationBar = () => {
         <NavLinks />
       </div>
     </div>
-
     <div className="navigation-right-side">
       <div className="navigation-dark-mode">
         <button className="dark-mode-button" type="button">
@@ -32,6 +31,6 @@ const NavigationBar = () => {
        />
     </div>
   </nav>
-)
-}
+);
+};
 export default NavigationBar;

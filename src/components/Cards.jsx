@@ -1,14 +1,12 @@
 import { cardsData } from "../data";
 import '../styles/cards.scss';
 
-const Cards = () => {
-
-return (
+const Cards = () => (
   <section className="cards-section">
     {cardsData.map((card)=> {
       const { img, title, description, description2, description3, description4 } = card
     return (
-     <div className="card-container">
+     <div className="card-container" key={title}>
       <img className="card-image" alt='office' src={img}/>
       <div className="card-details">
         <h2>{title}</h2>
@@ -24,7 +22,7 @@ return (
     })
     }
   </section>
-)
-}
+);
+
 
 export default Cards;

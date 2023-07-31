@@ -40,8 +40,7 @@
 }
 
 //--Navigation for mobile version END here
-
-
+/// ----------------------------------------------
 //--Navigation for tablet STARTS here
 
 @media (min-width: 768px) {
@@ -89,7 +88,6 @@
  align-items: center;
 }
 
-
 .dark-mode-button {
   font-size: 15px;
   padding-top: 6px;
@@ -97,6 +95,7 @@
 }
 
 //--Navigation for tablet ENDS here
+/// ----------------------------------------------
 //--Navigation for desktop STARTS here
 
 @media (min-width: 1000px) {
@@ -109,7 +108,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 1.5rem;
+    padding: 2.5%;
   }
   .close-btn {
     font-size: 1.3rem;
@@ -122,14 +121,12 @@
     margin-top: 0.2rem;
   }
 
-  
   .logo {
     justify-self: center;
     height: 50px;
     align-self: start;
   }
   
-
   .sidebar {
     position: fixed;
     top: 0;
@@ -154,12 +151,12 @@
       gap: 40px;
     }
   }
+
   .show-sidebar {
     transform: translate(0);
     z-index: 999;
   }
  
-
   @media screen and (min-width: 992px) {
     .sidebar {
       display: none;

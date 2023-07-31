@@ -6,7 +6,7 @@ import NavButtons from "./NavButtons";
 import '../styles/navigation.scss';
 
 const Sidebar = () => {
-const { isSidebarOpen, closeSidebar } = useNavContext()
+const { isSidebarOpen, closeSidebar } = useNavContext();
 return (
   <aside className={`${isSidebarOpen ? 'sidebar show-sidebar' : 'sidebar'}`}>
     <div className="sidebar-header">

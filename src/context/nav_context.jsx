@@ -5,7 +5,7 @@ const initialState = {
   isSidebarOpen: false
 }
 
-const NavContext = React.createContext()
+const NavContext = React.createContext();
 
 export const NavProvider = ({children}) => {
   const [state, dispatch] = useReducer(reducer, initialState)
@@ -15,13 +15,13 @@ const openSidebar = () => {
 
 const closeSidebar = () => {
   dispatch({ type: 'SIDEBAR_CLOSE' })
-}
+};
 return (
   <NavContext.Provider value={{...state, openSidebar, closeSidebar}}
 > {children} </NavContext.Provider>
-)
-}
+);
+};
 
 export const useNavContext = () => {
   return useContext(NavContext)
-}
+};

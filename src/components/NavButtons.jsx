@@ -9,6 +9,6 @@ const NavButtons = () => (
       sign up
     </button>
   </div>
-)
+);
 
 export default NavButtons;
