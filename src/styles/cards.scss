@@ -69,12 +69,14 @@
     width: 80%;
   }
 }
+
 .card-container:last-child {
   ul {
     padding-left: 10px;
     width: 100%;
     align-items: flex-start;
   }
+
   li {
     list-style: inside;
     text-align: left;
@@ -121,26 +123,25 @@
 .card-container:nth-child(odd) {
   flex-direction: row-reverse;
 }
-
 }
+
 @media (min-width: 1300px) {
   .cards-section {
     gap: 50px;
     padding: 100 30px;
   }
+
    .card-image {
-  width: 37%;
-}
+   width: 37%;
+  }
 
 .card-container {
   h2 {
     font-size: 40px;
   }
+
   li {
     font-size: 16px;
-
   }
-}
-
-
+ }
 }

@@ -1,8 +1,7 @@
 import { mentorsData } from "../data";
 import '../styles/mentors.scss';
 import { AiFillStar} from 'react-icons/ai';
-import { PiSuitcaseSimpleBold } from 'react-icons/pi'
-
+import { PiSuitcaseSimpleBold } from 'react-icons/pi';
 
 const Mentors = () => {
 const {title, tags, mentors} = mentorsData;
@@ -12,7 +11,7 @@ return (
     <div className="tags-container">
       {tags.map((tag)=> {
         return (
-          <div className="tag-container">
+          <div className="tag-container" key={tag}>
             <p>{tag}</p>
             <p> &#62;</p>
           </div>
@@ -48,7 +47,7 @@ return (
       })}
     </div>
   </section>
-)
-}
+);
+};
 
 export default Mentors;

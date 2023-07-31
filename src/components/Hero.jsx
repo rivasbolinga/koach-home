@@ -6,7 +6,7 @@ const Hero = () => (
     <h1>Unlocking the Future of Talent</h1>
     <img className="hero-img" alt="student studying" src={heroImage} />
   </section>
-)
+);
 
 
-export default Hero
+export default Hero;
